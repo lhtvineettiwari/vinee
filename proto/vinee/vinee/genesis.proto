@@ -1,0 +1,14 @@
+syntax = "proto3";
+package lhtvineettiwari.vinee.vinee;
+
+import "gogoproto/gogo.proto";
+import "vinee/vinee/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/lhtvineettiwari/vinee/x/vinee/types";
+
+// GenesisState defines the vinee module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}

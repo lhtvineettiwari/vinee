@@ -1,0 +1,12 @@
+syntax = "proto3";
+package lhtvineettiwari.vinee.vinee;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/lhtvineettiwari/vinee/x/vinee/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}
